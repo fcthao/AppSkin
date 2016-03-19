@@ -32,12 +32,13 @@ class ViewController: UIViewController {
 //        setSegemetedControlStatusWithSkinName(skinName!)
         self.applySkin()
     }
-    
+    /**
+     简单粗暴，直接从皮具类中加载控件皮肤
+     */
     private func applySkin() {
-        faceImageView.image = UIImage(named: "orange.bundle/face")
-        heartImageView.image = UIImage(named: "orange.bundle/heart")
-        rectImageView.image = UIImage(named: "orange.bundle/rect")
-
+        faceImageView.image = SkinTool.loadImageWithName("face")
+        heartImageView.image = SkinTool.loadImageWithName("heart")
+        rectImageView.image = SkinTool.loadImageWithName("rect")
     }
     
     /**
