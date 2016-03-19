@@ -17,18 +17,27 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var myView: UIView!
+    @IBOutlet weak var myLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(<#T##items: Any...##Any#>)
 //        faceImageView.image = UIImage(named: "orange.bundle/face")
 //        heartImageView.image = UIImage(named: "orange.bundle/heart")
 //        rectImageView.image = UIImage(named: "orange.bundle/rect")
-        var skinName: String? = NSUserDefaults.standardUserDefaults().stringForKey("skin")
-        if skinName == nil {
-            skinName = "green"
-        }
-        applySkinWithSkinName(skinName!)
-        setSegemetedControlStatusWithSkinName(skinName!)
+//        var skinName: String? = NSUserDefaults.standardUserDefaults().stringForKey("skin")
+//        if skinName == nil {
+//            skinName = "green"
+//        }
+//        applySkinWithSkinName(skinName!)
+//        setSegemetedControlStatusWithSkinName(skinName!)
+        self.applySkin()
+    }
+    
+    private func applySkin() {
+        faceImageView.image = UIImage(named: "orange.bundle/face")
+        heartImageView.image = UIImage(named: "orange.bundle/heart")
+        rectImageView.image = UIImage(named: "orange.bundle/rect")
+
     }
     
     /**

@@ -54,16 +54,39 @@
                                     <action selector="clickSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="xGu-DQ-Obj"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fanwei" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysJ-d3-yRP">
+                                <rect key="frame" x="428" y="114" width="78" height="54"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.90196078431372551" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="d7r-ob-EFy"/>
+                                    <constraint firstAttribute="height" constant="54" id="guJ-4Y-JsW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fp-NX-zVk">
+                                <rect key="frame" x="428" y="267" width="104" height="97"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="SxU-4h-vR1"/>
+                                    <constraint firstAttribute="width" constant="104" id="o9L-L4-Hz3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="De1-EV-4mK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="06I-RX-rcq"/>
                             <constraint firstItem="UCH-cK-8Uo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="4hS-Fw-93T"/>
                             <constraint firstItem="Ou9-h7-uq6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4wf-F5-rW5"/>
+                            <constraint firstItem="ysJ-d3-yRP" firstAttribute="top" secondItem="UCH-cK-8Uo" secondAttribute="top" id="7rb-Qu-u4n"/>
+                            <constraint firstItem="2Fp-NX-zVk" firstAttribute="leading" secondItem="Ou9-h7-uq6" secondAttribute="trailing" constant="8" id="IRW-Dc-hZi"/>
+                            <constraint firstItem="2Fp-NX-zVk" firstAttribute="top" secondItem="Ou9-h7-uq6" secondAttribute="top" id="KGK-gb-6ET"/>
                             <constraint firstItem="UCH-cK-8Uo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Nvz-gS-iVx"/>
                             <constraint firstItem="Ou9-h7-uq6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="XVv-yR-ndx"/>
                             <constraint firstItem="UHB-V8-c41" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="70" id="iOQ-6h-wLY"/>
                             <constraint firstItem="UCH-cK-8Uo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYY-Rx-f2X"/>
+                            <constraint firstItem="ysJ-d3-yRP" firstAttribute="leading" secondItem="UCH-cK-8Uo" secondAttribute="trailing" constant="8" id="lSf-zZ-6RB"/>
                             <constraint firstItem="De1-EV-4mK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="poi-He-NPn"/>
                             <constraint firstItem="Ou9-h7-uq6" firstAttribute="top" secondItem="UCH-cK-8Uo" secondAttribute="bottom" constant="20" id="tu1-tx-aXz"/>
                             <constraint firstItem="De1-EV-4mK" firstAttribute="top" secondItem="Ou9-h7-uq6" secondAttribute="bottom" constant="20" id="uBf-sg-eWm"/>
@@ -87,6 +110,8 @@
                     <connections>
                         <outlet property="faceImageView" destination="Ou9-h7-uq6" id="aZE-p9-nCI"/>
                         <outlet property="heartImageView" destination="UCH-cK-8Uo" id="LBo-CX-zft"/>
+                        <outlet property="myLabel" destination="ysJ-d3-yRP" id="Y3n-oK-jMP"/>
+                        <outlet property="myView" destination="2Fp-NX-zVk" id="Wz0-mu-gek"/>
                         <outlet property="rectImageView" destination="De1-EV-4mK" id="8U3-wF-1n6"/>
                         <outlet property="segmentedControl" destination="UHB-V8-c41" id="Waz-jW-Pnc"/>
                     </connections>
