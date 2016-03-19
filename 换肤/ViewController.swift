@@ -39,8 +39,10 @@ class ViewController: UIViewController {
         faceImageView.image = SkinTool.loadImageWithName("face")
         heartImageView.image = SkinTool.loadImageWithName("heart")
         rectImageView.image = SkinTool.loadImageWithName("rect")
-        
-        myLabel.backgroundColor = SkinTool.loadBackgroundColorWithKey("myLabel_bgColor");
+        //key在plist文件中定义
+        myLabel.backgroundColor = SkinTool.loadColorWithKey("myLabel_bg");
+        myLabel.textColor = SkinTool.loadColorWithKey("myLabel_textColor")
+        myView.backgroundColor = SkinTool.loadColorWithKey("myView_bg")
     }
     
     /**
