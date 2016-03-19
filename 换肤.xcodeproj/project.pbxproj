@@ -17,6 +17,7 @@
 		42C640BD1C9D9E65008D59A1 /* orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42C640B91C9D9E65008D59A1 /* orange.bundle */; };
 		42C640BE1C9D9E65008D59A1 /* red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42C640BA1C9D9E65008D59A1 /* red.bundle */; };
 		42C640C01C9DB333008D59A1 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C640BF1C9DB333008D59A1 /* TwoViewController.swift */; };
+		42C640C21C9DC2C6008D59A1 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C640C11C9DC2C6008D59A1 /* ThreeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		42C640B91C9D9E65008D59A1 /* orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = orange.bundle; sourceTree = "<group>"; };
 		42C640BA1C9D9E65008D59A1 /* red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = red.bundle; sourceTree = "<group>"; };
 		42C640BF1C9DB333008D59A1 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		42C640C11C9DC2C6008D59A1 /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				42C640891C9D99DB008D59A1 /* AppDelegate.swift */,
 				42C6408B1C9D99DB008D59A1 /* ViewController.swift */,
 				42C640BF1C9DB333008D59A1 /* TwoViewController.swift */,
+				42C640C11C9DC2C6008D59A1 /* ThreeViewController.swift */,
 				42C6408D1C9D99DB008D59A1 /* Main.storyboard */,
 				42C640901C9D99DB008D59A1 /* Assets.xcassets */,
 				42C640921C9D99DB008D59A1 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				42C6408C1C9D99DB008D59A1 /* ViewController.swift in Sources */,
 				42C6408A1C9D99DB008D59A1 /* AppDelegate.swift in Sources */,
 				42C640C01C9DB333008D59A1 /* TwoViewController.swift in Sources */,
+				42C640C21C9DC2C6008D59A1 /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +308,7 @@
 				42C6409A1C9D99DB008D59A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
