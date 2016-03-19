@@ -68,6 +68,7 @@
 		42C640881C9D99DB008D59A1 /* 换肤 */ = {
 			isa = PBXGroup;
 			children = (
+				42C640C31C9DC769008D59A1 /* SkinTool.swift */,
 				42C640B71C9D9E65008D59A1 /* blue.bundle */,
 				42C640B81C9D9E65008D59A1 /* green.bundle */,
 				42C640B91C9D9E65008D59A1 /* orange.bundle */,
@@ -80,7 +81,6 @@
 				42C640901C9D99DB008D59A1 /* Assets.xcassets */,
 				42C640921C9D99DB008D59A1 /* LaunchScreen.storyboard */,
 				42C640951C9D99DB008D59A1 /* Info.plist */,
-				42C640C31C9DC769008D59A1 /* SkinTool.swift */,
 			);
 			path = "换肤";
 			sourceTree = "<group>";

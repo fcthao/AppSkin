@@ -19,4 +19,8 @@ class SkinTool {
         print("\(skinName).bundle/\(name)")
         return image
     }
+    
+    static func loadBackgroundColorWithKey(key: String) -> UIColor? {
+        
+    }
 }
