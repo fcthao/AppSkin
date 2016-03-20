@@ -11,10 +11,11 @@ import UIKit
 class ThreeViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView.image = SkinTool.loadImageWithName("heart")
     }
 
 }

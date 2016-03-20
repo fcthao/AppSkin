@@ -13,11 +13,10 @@ class TwoViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
-        let skinName: String? = NSUserDefaults.standardUserDefaults().stringForKey("skin")
-        if let skinName = skinName {
-            
-            imageView.image = UIImage(named: "\(skinName).bundle/heart")
-        }
+
+        super.viewDidLoad()
+        
+        imageView.image = SkinTool.loadImageWithName("rect")
         
     }
 }

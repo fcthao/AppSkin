@@ -10,24 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    /// 测试皮肤的图像方案控件
     @IBOutlet weak var faceImageView: UIImageView!
     @IBOutlet weak var heartImageView: UIImageView!
     @IBOutlet weak var rectImageView: UIImageView!
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    /// 测试颜色方案控件
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var myLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        faceImageView.image = UIImage(named: "orange.bundle/face")
-//        heartImageView.image = UIImage(named: "orange.bundle/heart")
-//        rectImageView.image = UIImage(named: "orange.bundle/rect")
-//        var skinName: String? = NSUserDefaults.standardUserDefaults().stringForKey("skin")
-//        if skinName == nil {
-//            skinName = "green"
-//        }
-//        applySkinWithSkinName(skinName!)
-//        setSegemetedControlStatusWithSkinName(skinName!)
+        //应用皮肤
         applySkin()
         //初始化分段控件状态
         segmentedControl.selectedSegmentIndex = SkinTool.segmentIndex()
@@ -44,10 +39,9 @@ class ViewController: UIViewController {
         myLabel.textColor = SkinTool.loadColorWithKey("myLabel_textColor")
         myView.backgroundColor = SkinTool.loadColorWithKey("myView_bg")
     }
-    
 
     /**
-     分页控件值改变方法
+     分页控件值改变方法：保存用户选择的皮肤方案并应用新的皮肤
      
      - parameter sender: 分段控件
      */
