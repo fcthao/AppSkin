@@ -8,19 +8,30 @@
 
 import UIKit
 
-/// 用户偏好设置中的皮肤名字，第一次使用时，初始化为"orange"
-private var skinName = NSUserDefaults.standardUserDefaults().stringForKey("skin") ?? "orange"
-
 /// 应用程序皮肤工具类
 class SkinTool {
-    
+    /**
+     加载偏好设置中的图像框皮肤设置，第一次使用时，初始化为"orange"
+     
+     - parameter name: <#name description#>
+     
+     - returns: <#return value description#>
+     */
     static func loadImageWithName(name: String) -> UIImage? {
+        let skinName = NSUserDefaults.standardUserDefaults().stringForKey("skin") ?? "orange"
         let image = UIImage(named: "\(skinName).bundle/\(name)")
         print("\(skinName).bundle/\(name)")
         return image
     }
-    
+    /**
+     加载
+     
+     - parameter key: <#key description#>
+     
+     - returns: <#return value description#>
+     */
     static func loadColorWithKey(key: String) -> UIColor? {
+        let skinName = NSUserDefaults.standardUserDefaults().stringForKey("skin") ?? "orange"
         let path = NSBundle.mainBundle().pathForResource("\(skinName).bundle/color", ofType: "plist")
         guard let pathStr = path else {
             return nil
@@ -34,6 +45,14 @@ class SkinTool {
         let green = CGFloat((arr[1] as NSString).doubleValue)
         let blue = CGFloat((arr[2] as NSString).doubleValue)
         return UIColor(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: 1.0)
+    }
+    
+    static func saveSkin(skinName: String?) {
+        
+        if let skinName = skinName {
+            NSUserDefaults.standardUserDefaults().setObject(skinName, forKey: "skin")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
     }
     
 }
