@@ -29,6 +29,8 @@ class ViewController: UIViewController {
 //        applySkinWithSkinName(skinName!)
 //        setSegemetedControlStatusWithSkinName(skinName!)
         applySkin()
+        //初始化分段控件状态
+        segmentedControl.selectedSegmentIndex = SkinTool.segmentIndex()
     }
     /**
      简单粗暴，直接从工具类中加载控件皮肤
