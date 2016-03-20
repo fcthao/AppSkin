@@ -12,11 +12,9 @@ class TwoViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
-    override func viewDidLoad() {
-
-        super.viewDidLoad()
-        
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         imageView.image = SkinTool.loadImageWithName("rect")
-        
     }
+    
 }
